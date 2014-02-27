@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <title>Shopping List AngularJS Tutorial</title>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="appctrl.js"></script>
+</head>
+<body>
+<h1>Shopping List</h1>
+    <div ng-controller="AppCtrl">
+        <form ng-submit="addItem()">
+            <input type="text" placeholder="item to add" ng-model="itemToAdd"/>
+            <input type="submit" value="add"> <p ng-bind="itemToAdd"></p>
+        </form>
+    </div>
+</body>
+</html>
