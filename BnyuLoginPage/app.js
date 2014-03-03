@@ -3,13 +3,13 @@
  */
 var app = angular.module('app', ['ui.router'])
     .config(function($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise('Templates/login.html');
+        $urlRouterProvider.otherwise('/login');
         $stateProvider
-            .state('home',{
+            .state('login',{
                 url: '/login',
                 templateUrl: 'Templates/login.html'
             })
-    })
+    });
 
 
 

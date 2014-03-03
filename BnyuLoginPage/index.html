@@ -4,7 +4,6 @@
 <head>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
     <script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
-    <script src="lib/angular-ui-router.min.js"></script>
     <script src="app.js"></script>
     <script src="Controllers/loginCtrl.js"></script>
     <link rel="stylesheet" href="Styles/style.css" type="text/css"/>
@@ -14,8 +13,8 @@
 <body>
 <div class="logo"> <img src="Images/logo.png"/> </div>
 
-        <div ui-view></ng-view>
-</div>
+        <div ui-view>
+        </div>
     <footer ng-include="'Templates/footer.html'" class="footer"></footer>
 </body>
 </html>
